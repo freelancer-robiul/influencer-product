@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/*========== Common Styles ==================*/
+
 body{
     font-family: "Poppins", sans-serif;
     max-width: 1240px;
     margin: 0 auto;
+    background-color: #ffffff;
 }
+
+
+/*========== Custom Styles ==================*/
 
 .header-area{}
 
@@ -100,6 +106,155 @@ i.fa-arrow-right{
     border: 1px solid rgba(200, 160, 255, 0.2);
 }
 
+/*======== Sponsors Area ==================*/
+
+
+.our-sponsors-flex{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin-top: 200px;
+    align-items: center;
+    padding-left: 45px;
+    border: 1px solid #dee4eb;
+    padding: 20px;
+    border-right: none;
+    border-left: none;
+}
+
+/*============ Collection Area =====================*/
+
+
+.collection-area{
+    margin-top: 100px;
+}
+
+
+.section-title{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #3A3A3A;
+    line-height: 6rem;
+    text-align: center;
+}
+
+.collection-cards-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    
+}
+
+.single-card{
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.single-card h2{
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2.6rem;
+    color: #18191F;
+}
+
+.single-card p{
+    font-size: .9rem;
+    font-weight: 700;
+    color: #787885;
+}
+
+.card-value{
+    font-size: 1.5rem;
+}
+
+.single-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.single-card ul{
+    display: flex;
+    padding-left: 0px;
+}
+
+.single-card ul li{
+    list-style: none;
+}
+
+.single-card ul li:last-child {
+    margin-left: 3dvh;
+}
+
+.see-more{
+    text-align: right;
+    color: red;
+    cursor: pointer;
+}
+
+.see-more i.fa-arrow-right{
+    margin-left: 5px;
+}
+
+
+
+/*============= Featured Area ==================*/
+
+
+.featured-area{
+    margin-top: 100px;
+}
+
+.featured{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*============ Footer Area =======================*/
+
+.footer-area{
+    margin-top: 100px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content{
+    text-align: center;
+    padding: 65px;
+}
+
+.footer-content h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.footer-content p{
+    font-size: .8rem;
+    font-weight: 700;
+}
+
+.footer-content ul{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.footer-content ul li{
+    list-style: none;
+}
+
+.footer-content ul li i{
+    color: white;
+}
+
+
+
 
 /*============= Responsive Area ==================*/
 
@@ -162,7 +317,7 @@ i.fa-arrow-right{
 
 /*============= Tab Device ==================*/
 
-@media screen and (min-width: 577px), and (max-width: 992px) {
+@media screen and (min-width: 577px) and (max-width: 992px) {
     .header-banner-flex, .header-flex{
         flex-direction: column;
         
