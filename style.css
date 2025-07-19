@@ -286,6 +286,26 @@ i.fa-arrow-right{
         margin-top: 5rem;
     }
 
+
+
+    .header-banner-flex {
+        flex-direction: column;
+        padding: 0 15px;
+        align-items: center;
+        text-align: center;
+      }
+    
+      .banner-content {
+        max-width: 100%;
+      }
+    
+      .banner-image img {
+        max-width: 100%;
+        height: auto;
+      }
+
+
+
     nav ul li{
         margin-right: 10px;
     }
@@ -337,6 +357,11 @@ i.fa-arrow-right{
     .collection-cards-grid{
         grid-template-columns: repeat(1, 1fr);
     }
+
+    single-card:active {
+        transform: scale(0.98);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      }
 
     .featured-grid{
         grid-template-columns: repeat(1, 1fr);
@@ -403,6 +428,11 @@ nav ul li a:hover{
 .collection-cards-grid{
     grid-template-columns: repeat(1, 1fr);
 }
+
+single-card:active {
+    transform: scale(0.98);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
 
 
 img.img-dv{
