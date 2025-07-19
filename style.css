@@ -151,6 +151,11 @@ i.fa-arrow-right{
     border-radius: 12px;
 }
 
+.single-card img{
+    width: 100%;
+    object-fit: cover;
+}
+
 .single-card h2{
     font-size: 1.6rem;
     font-weight: 600;
@@ -205,7 +210,7 @@ i.fa-arrow-right{
     margin-top: 100px;
 }
 
-.featured{
+.featured-grid{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: space-between;
@@ -243,6 +248,7 @@ i.fa-arrow-right{
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    padding-left: 0px;
 }
 
 .footer-content ul li{
@@ -265,6 +271,16 @@ i.fa-arrow-right{
     .header-banner-flex, .header-flex{
         flex-direction: column;
     }
+
+    .banner-image {
+        order: -1; 
+        margin-bottom: 70px;
+      }
+    
+      .banner-content {
+        order: 1;
+        margin-bottom: -70px;
+      }
 
     .banner-image div{
         margin-top: 5rem;
@@ -312,6 +328,32 @@ i.fa-arrow-right{
         margin: 10px auto;
     }
 
+    .our-sponsors-flex{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .collection-cards-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .featured-grid{
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .featured-image{
+        order: -1;
+        text-align: center;
+    }
+
+    .featured-content{
+        order: 1;
+        text-align: center;
+    }
+
    
 }
 
@@ -320,8 +362,28 @@ i.fa-arrow-right{
 @media screen and (min-width: 577px) and (max-width: 992px) {
     .header-banner-flex, .header-flex{
         flex-direction: column;
-        
     }
+
+    nav ul{
+        background-color: aquamarine;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    nav ul li a{
+        padding: 10px 20px;
+        font-size: 1.2rem;
+    }
+
+    .banner-image {
+        order: -1; 
+        margin-bottom: 70px;
+      }
+    
+      .banner-content {
+        order: 1;
+        margin-bottom: -70px;
+      }
 
     .banner-image div{
         margin-top: 5rem;
@@ -334,6 +396,46 @@ i.fa-arrow-right{
     .header-banner-flex{
         margin-top: 20px;
         justify-content: center;
+        text-align: center;
+    }
+
+    .collection-cards-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .collection-cards-grid .single-card:last-child:nth-child(odd) {
+        grid-column: 1 / -1;
+        justify-self: center;
+      }
+
+    .our-sponsors-flex{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .featured-grid{
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .featured-image{
+        order: -1;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .featured-image img{
+        width: 700px;
+        object-fit: cover;
+    }
+
+    .featured-content{
+        order: 1;
         text-align: center;
     }
 
