@@ -272,6 +272,16 @@ i.fa-arrow-right{
         flex-direction: column;
     }
 
+    
+    .banner-image img {
+        max-width: 100%;
+        height: auto;
+        right: -54px;
+        top: 9px;
+    }
+    
+   
+
     .banner-image {
         order: -1; 
         margin-bottom: 70px;
@@ -285,25 +295,6 @@ i.fa-arrow-right{
     .banner-image div{
         margin-top: 5rem;
     }
-
-
-
-    .header-banner-flex {
-        flex-direction: column;
-        padding: 0 15px;
-        align-items: center;
-        text-align: center;
-      }
-    
-      .banner-content {
-        max-width: 100%;
-      }
-    
-      .banner-image img {
-        max-width: 100%;
-        height: auto;
-      }
-
 
 
     nav ul li{
